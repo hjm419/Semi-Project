@@ -52,5 +52,5 @@
 ## 🚀 실행 방법
 ### 1. 저장소 클론
 ```bash
-git clone https://github.com/hjm419/Semi-Project.git
+https://github.com/hjm419/Semi-Project_Movie-Review-Site.git
 
