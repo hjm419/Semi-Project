@@ -1,0 +1,33 @@
+// 패키지 설치 명령어
+
+아래 내용 한번에 설치 :
+npm install express sequelize mysql2 bcrypt jsonwebtoken cors dotenv
+
+npm install nodemon --save-dev (필수아님)
+
+#기본 의존성 패키지 설치
+npm i
+
+# Express.js 웹 프레임워크
+npm install express
+
+# Sequelize ORM
+npm install sequelize
+
+# MySQL 드라이버
+npm install mysql2
+
+# 비밀번호 해싱
+npm install bcrypt
+
+# JWT 토큰
+npm install jsonwebtoken
+
+# CORS 처리
+npm install cors
+
+# 환경변수 관리
+npm install dotenv
+
+# 개발 서버 자동 재시작
+npm install nodemon --save-dev

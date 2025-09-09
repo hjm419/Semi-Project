@@ -1,0 +1,18 @@
+server.js 변경사항
+
+1. moive에 평점 attribute 추가되었습니다. 
+그에 따른 models/Movie.js 변경
+
+기존 데이터베이스 영화 테이블 drop하고 다시 받아야할듯?
+순서
+1) mysql workbench 가서 drop table movies 하기
+2) 서버 실행하기
+3) api talent 가서 Post방식 api/movies/sync
+
+
+2. 평점이 리뷰가 CRUD 될 때마다 바뀌기 때문에 reviewController 로직 변경
+
+3. 평점 평균내는 api 삭제
+
+4. 리뷰 작성 후 나타나던 버그 고침 (average tofixed는 실수형 type만 가능, 전달 받은 평점 데이터는 string 타입이라 안맞았네요)
+

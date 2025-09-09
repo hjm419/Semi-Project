@@ -1,0 +1,100 @@
+/* Home.css */
+.movie-poster-placeholder img {
+    max-width: 100%;
+    height: auto;
+    /* 이미지를 박스에 꽉 채우기 위해 */
+    display: block;
+}
+.movie-card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.page-item.active .page-link {
+    background-color: var(--bs-danger);
+    border-color: var(--bs-danger);
+}
+.page-link {
+    padding: 0.75rem 1rem;
+    border-radius: 50px !important;
+    margin: 0 0.25rem;
+}
+.page-link:hover {
+    background-color: #212529 !important;
+}
+.page-item.active .page-link {
+    background-color: black !important;
+    color: white !important;
+    font-weight: bold;
+}
+.topCarousel {
+    height: 75vh;
+    background-color: black;
+}
+.topCarousel .carousel-inner,
+.topCarousel .carousel-item {
+    height: 100%;
+}
+.topCarousel .carousel-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 배경용 이미지 (확대+블러) */
+.carousel-bg-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(12px) brightness(0.8);
+    z-index: 0;
+}
+
+/* 원본 이미지 */
+.carousel-main-img {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: auto;
+    box-shadow: 0 0 32px rgba(0, 0, 0, 0.3);
+    background: transparent;
+}
+
+/* 캐러셀 이미지 오버레이(투명도 50%) */
+.carousel-image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* 캐러셀 타이틀 아래쪽 정렬 */
+.carousel-image-title {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: bold;
+    font-size: 2.3rem;
+    text-align: center;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
